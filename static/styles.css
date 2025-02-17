@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    max-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e9f5f9;
+}
+
+#title {
+    margin: 0;
+    margin-bottom: 1.2em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#main {
+    width: 60%;
+    border: 1px solid #a8d5e5;
+    border-radius: 15px;
+    box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.2);
+    /* background-color:  */
+    margin: 0 auto; 
+    margin-top: 10em;
+    padding: 1em;
+    background-color: #a8d5e5;
+    color: #0f3c4c;
+}
+
+label[for=file-input] {
+    display: block;
+    margin-bottom: 1em;
+}
+
+
+h2, label[for=file-input] {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.file {
+    display: flex;
+    flex-direction: row;
+    padding: 1.2em 0;
+    padding-left: 0.5em;
+    border: 1px solid #a8d5e5;
+    background-color: #e9f5f9;
+    width: 75%;
+    margin-bottom: 0.5em;
+    border-radius: 12px;
+    box-shadow: 10px 10px 15px rgb(197, 197, 197, 0.4);
+}
+
+
+.file-name {
+    margin: 0;
+    font-size: 1rem;
+    /* font-weight: bold; */
+}
+
+#convert-button, #download-button {
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 1.2em 0.5rem;
+    font-family: inherit;
+    color: #0f3c4c;
+    border: 1px solid #a8d5e5;
+    background-color: #e9f5f9;
+    border-radius: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#download-button{ 
+    margin-top: 1em;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+#convert-button:hover, #download-button:hover {
+    background-color: #d9eff7;
+    transition: 0.8s;
+
+}
+
+.cancel-button {
+    display: none;
+}
+
+.file {
+    position: relative;
+}
+
+.file:hover .cancel-button {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 0.2em 0.5em;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #0f3c4c;
+    border: 0.5px solid #0f3c4c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.files-ready-to-download > .file:hover .cancel-button {
+    display: none;
+}
